@@ -37,6 +37,8 @@
                             scope.$eval(attrs.redactor) : {},
                         editor;
 
+                    element = $(element)
+
                     angular.extend(options, redactorOptions, additionalOptions);
 
                     // prevent collision with the constant values on ChangeCallback
